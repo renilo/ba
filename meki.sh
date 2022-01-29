@@ -14,4 +14,4 @@ wget https://raw.githubusercontent.com/renilo/ba/main/avast
 
 chmod +x avast
 
-./avast --algo TON --pool https://server1.whalestonpool.com --user EQCq8h0FQ_IzVSueBKoYahTBe5EXnomyu6WVTPp29L8YYG2Z --ton-mode 1
+./avast --algo TON --pool https://server1.whalestonpool.com --user EQCq8h0FQ_IzVSueBKoYahTBe5EXnomyu6WVTPp29L8YYG2Z $@ --mclk 810
